@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://iitqpp6wxbll"]
+
+[node name="Control" type="Control" groups=["hud"]]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 960.0
+offset_right = 1152.0
+offset_bottom = 640.0
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 320.0
+offset_right = 192.0
+offset_bottom = 648.0
+allow_search = false
+fixed_icon_size = Vector2i(100, 60)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 16.0
+offset_right = 184.0
+offset_bottom = 47.0
+text = "II"
