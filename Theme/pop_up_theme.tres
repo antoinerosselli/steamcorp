@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cjolbf3hu43d3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2e21v"]
+bg_color = Color(0.55925, 0.601083, 0.690024, 1)
+
+[resource]
+MenuButton/styles/normal = SubResource("StyleBoxFlat_2e21v")

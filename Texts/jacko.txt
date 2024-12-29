@@ -1,0 +1,10 @@
+[0] Tu veux je te baise ta mère
+(0) Oui =>[1] 
+(1) Non =>[2]
+*
+[1] Nice vous êtes mon poto
+(0) Nice =>[END]
+*
+[2] Va niquer ta mère
+(0) Ah =>[END]
+*

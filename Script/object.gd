@@ -13,7 +13,7 @@ extends Area2D
 @export var icon_inventory:Texture2D
 @export_category("pop_up")
 @export var pop_up:bool
-@export var id:String
+@export var path_dial:String
 @export_category("zoom")
 @export var zoom:bool
 @export var zoom_texture:Texture2D
@@ -41,7 +41,7 @@ func object_job():
 			Tools.action_pickable(object_name, icon_inventory)
 			queue_free()
 		if pop_up == true:
-			Tools.action_pop_up(object_name, id)
+			Tools.action_pop_up(object_name, path_dial)
 		if zoom == true:
 			Tools.action_zoom(object_name, zoom_texture)
 

@@ -18,6 +18,11 @@ config/icon="res://Sprite/icon.svg"
 
 Tools="*res://Script/Tools.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
 [input]
 
 click={

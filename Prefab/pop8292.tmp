@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://dy4nosapxrueu"]
+[gd_scene load_steps=2 format=3 uid="uid://dy4nosapxrueu"]
 
-[ext_resource type="Theme" uid="uid://cjolbf3hu43d3" path="res://Theme/pop_up_theme.tres" id="1_r3mul"]
 [ext_resource type="Script" path="res://Script/pop_up.gd" id="1_y4ioh"]
 
 [node name="Control" type="Control"]
@@ -8,7 +7,6 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 1152.0
 offset_bottom = 648.0
-theme = ExtResource("1_r3mul")
 script = ExtResource("1_y4ioh")
 
 [node name="Fond" type="Panel" parent="."]
@@ -27,23 +25,24 @@ offset_bottom = 31.0
 [node name="Texte" type="Label" parent="Fond"]
 layout_mode = 0
 offset_left = 8.0
-offset_top = 64.0
-offset_right = 888.0
-offset_bottom = 184.0
+offset_top = 48.0
+offset_right = 704.0
+offset_bottom = 168.0
+
+[node name="Continue" type="Button" parent="Fond"]
+layout_mode = 0
+offset_left = 712.0
+offset_top = 48.0
+offset_right = 880.0
+offset_bottom = 96.0
+text = "Continue"
 
 [node name="Close" type="Button" parent="Fond"]
 layout_mode = 0
-offset_left = 720.0
-offset_top = 8.0
-offset_right = 888.0
-offset_bottom = 56.0
+offset_left = 712.0
+offset_top = 112.0
+offset_right = 880.0
+offset_bottom = 160.0
 text = "Close"
 
-[node name="MenuButton" type="OptionButton" parent="Fond"]
-layout_mode = 0
-offset_top = 144.0
-offset_right = 896.0
-offset_bottom = 192.0
-
 [connection signal="pressed" from="Fond/Close" to="." method="_on_close_pressed"]
-[connection signal="item_selected" from="Fond/MenuButton" to="." method="_on_menu_button_item_selected"]

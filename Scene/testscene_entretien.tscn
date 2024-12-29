@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4x7vqkc12wjy"]
+
+[ext_resource type="PackedScene" uid="uid://iitqpp6wxbll" path="res://Prefab/hud_player.tscn" id="1_8f4oi"]
+[ext_resource type="Texture2D" uid="uid://ceovmauetryim" path="res://Sprite/Bureau_directeur.png" id="1_gx4og"]
+[ext_resource type="PackedScene" uid="uid://0xdgv3e5sdl4" path="res://Prefab/object.tscn" id="3_61cca"]
+[ext_resource type="Texture2D" uid="uid://kmgxneve554x" path="res://Sprite/FTG.png" id="4_d0tfc"]
+
+[node name="TestsceneEntretien" type="Node2D"]
+
+[node name="BureauDirecteur" type="Sprite2D" parent="."]
+position = Vector2(568, 320)
+scale = Vector2(2.2, 2.2)
+texture = ExtResource("1_gx4og")
+
+[node name="Control" parent="." instance=ExtResource("1_8f4oi")]
+
+[node name="Area2D" parent="." instance=ExtResource("3_61cca")]
+position = Vector2(560, 256)
+object_name = "zizi du dirlo"
+icon_inventory = ExtResource("4_d0tfc")
+pop_up = true
+
+[node name="Area2D2" parent="." instance=ExtResource("3_61cca")]
+position = Vector2(312, 400)
+object_name = "zizi"
+pickable = true
+icon_inventory = ExtResource("4_d0tfc")

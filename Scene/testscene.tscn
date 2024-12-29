@@ -12,8 +12,8 @@ clip_contents = true
 
 [node name="Area2D" parent="." instance=ExtResource("1_rd638")]
 position = Vector2(440, 240)
-pickable = true
-icon_inventory = ExtResource("2_g4wlc")
+pop_up = true
+path_dial = "res://Texts/jacko.txt"
 
 [node name="Area2D2" parent="." instance=ExtResource("1_rd638")]
 position = Vector2(776, 536)
